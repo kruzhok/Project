@@ -1,5 +1,8 @@
 /*======================atributes========================
 ========================================================*/
+
+/*пожалуйста, не мешай стили для разных страниц в единое месиво. Напиши сначала для одной страницы, потом для другой*/
+
 section {
 	border: 1px solid red;
 	min-height: 300px;
@@ -21,7 +24,9 @@ div, nav {
 	justify-content: space-between;
 	align-items: center;
 }
+/*пожалуйста, соблюдай разметку по образцу выше*/
 	.logopg {
+	/*чтобы разместить этот логотип по центру, лучше сделать mainLogo flex-контейнером и оставить margin:auto без margin-top:10px;*/
 	margin: auto;
 	margin-top: 10px;
 	height: 60px;
@@ -56,11 +61,13 @@ div, nav {
 	flex-wrap: wrap;
 	justify-content: space-around;
 	}
+	/*вместо того, чтобы писать одно и то же кучу раз, стоит ввести общий класс, см. коммент в html*/
 	.productItem1 {
 	margin-top: 50px;
 	margin-bottom: 50px;
 	width: 300px;
 	min-height: 300px;
+	/*зачем делать продуктовую карточку flex-контейнером, это нужно?*/
 	display: flex;
 	align-items: center;
 	}
